@@ -9,7 +9,7 @@ class Ticket:
 
     def __init__(self):
         client = MongoClient()
-        self.db = client['bd_tickets']
+        self.db = client['db_tickets']
 
     def read_data(self, file):
         # Загрузить данные в бд из CSV-файла
